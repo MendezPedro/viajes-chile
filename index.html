@@ -46,7 +46,7 @@
 
 
     <!-- Carousel -->
-    <header id="inicio" class="pt-5">
+    <header id="inicio" class="">
         <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -71,22 +71,23 @@
     </header>
 
 
-    <section class="color-black">
-        <h2>¿Quienes Somos?</h2>
-        <div class="row text-white my-5">
-            <div class="col-md-4">
-                <i class="container bg-info fas fa-plane fa-2x " data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Avión"></i>
-                <p class="text-left font-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio omnis, autem nostrum suscipit maiores tempore ad illo a veritatis esse ut voluptatem culpa aliquam odit vel sequi dolores, consequatur eos!</p> 
+    <section class="color-black ">
+        <div class="container">
+            <h2 class="py-5 text-white text-center">¿Quienes Somos?</h2>
+            <div class="row text-white py-5">
+                <div class="col-md-4">
+                    <i class="container text-center bg-info fas fa-plane fa-2x " data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Avión"></i>
+                    <p class="text-left font-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio omnis, autem nostrum suscipit maiores tempore ad illo a veritatis esse ut voluptatem culpa aliquam odit vel sequi dolores, consequatur eos!</p> 
+                </div>
+                <div class="col-md-4">
+                    <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium architecto deleniti possimus vel ducimus dolorem magni aperiam enim odio perspiciatis error repellat consectetur minus atque esse obcaecati, voluptates veritatis.</p>
+                    <i class=" container text-center fas fa-mountain fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Montaña"></i>
+                </div>
+                <div class="col-md-4">
+                    <i class="container text-center fas fa-route fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Ruta"></i>
+                    <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni consequuntur veritatis minima perferendis aliquam, distinctio qui fuga quam sunt sequi fugit minus molestiae reprehenderit similique odit iusto aliquid pariatur sit? </p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium architecto deleniti possimus vel ducimus dolorem magni aperiam enim odio perspiciatis error repellat consectetur minus atque esse obcaecati, voluptates veritatis.</p>
-                <i class=" container fas fa-mountain fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Montaña"></i>
-            </div>
-            <div class="col-md-4">
-                <i class="container fas fa-route fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Ruta"></i>
-                <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni consequuntur veritatis minima perferendis aliquam, distinctio qui fuga quam sunt sequi fugit minus molestiae reprehenderit similique odit iusto aliquid pariatur sit? </p>
-            </div>
-                
         </div>
     </section>
 
@@ -94,63 +95,67 @@
 
     <!-- Destacados en tarjetas -->
     <section id="destacado" class="color-black px-1">
-        <h2>Destacados</h2>
-        <div class="container py-5">
-            <h2 class="font-700  text-white text-center">Destacados</h2>
-            <hr class="bg-info">
-            <div class="row card-deck">
-                <div class="card">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h2 class="p-5 text-white text-center">Destacados</h2>
+
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-12 col-md-3 my-3">
+                    <div class="card my-3 h-100">
+                        <img src="assets/img/card1.jpg" class="card-img-top" alt="..." height="180px">
+                        <div class="card-body">
+                            <h3 class="card-title hide-1">Lorem ipsum dolor sit amet</h3>
+                            <p class="card-text text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Consectetur adipisicing elit</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+                <div class="col-12 col-md-3 my-3">
+                    <div class="card my-3 h-100">
+                        <img src="assets/img/card2.jpg" class="card-img-top" alt="..." height="180px">
+                        <div class="card-body">
+                            <h3 class="card-title hide-2">Consectetur adipisicing elit</h3>
+                            <p class="card-text text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    
+
+                <div class="col-12 col-md-3 my-3">
+                    <div class="card my-3 h-100">
+                        <img src="assets/img/card3.jpg" class="card-img-top" alt="..." height="180px">
+                        <div class="card-body">
+                            <h3 class="card-title hide-3">Sed do eiusmod tempor incididunt ut labore</h3>
+                            <p class="card-text text-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body bg-info">
-                        <h5 class="card-title">Ut enim ad minin veniam</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    
+
+                <div class="col-12 col-md-3 my-3">
+                    <div class="card my-3 h-100">
+                        <img src="assets/img/card4.jpg" class="card-img-top" alt="..." height="180px">
+                        <div class="card-body">
+                            <h3 class="card-title hide-3">Ut enim ad minin veniam</h3>
+                            <p class="card-text text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
 
 
-    <section class="px-5 color-black">
-        <form>
-            <div class="mb-3 p-3">
-                <h1 class="text-center fw-bold">Contáctame</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
-                <label for="exampleInputEmail1" class="form-label fw-bold">Nombre</label>
-                <input type="name" class="form-control my-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
-                <label for="exampleInputEmail1" class="form-label fw-bold">Correo electrónico</label>
-                <input type="email" class="form-control my-2" id="exampleInputEmail1" placeholder="Correo electrónico">
-                <label for="exampleInputEmail1" class="form-label fw-bold">Mensaje</label>
-                <input type="text" class="form-control my-2" placeholder="Escribe aqui tu mensaje">
-                <div class="text-end p-3">
-                    <button type="submit" class="btn btn-info">Enviar</button>
-                </div>
-            </div>
-            
+    <section class="p-5 color-black">
+        <form class="container text-white">
+
+            <h1 class="text-center fw-bold">Contáctame</h1>
+            <label for="exampleInputEmail1" class="form-label fw-bold">Nombre</label>
+            <input type="name" class="form-control my-3" id="exampleInputEmail1" aria-describedby="emailHelp" >
+            <label for="exampleInputEmail1" class="form-label fw-bold">Asunto</label>
+            <input type="email" class="form-control my-3" id="exampleInputEmail1" >
+            <label for="exampleInputEmail1" class="form-label fw-bold">Mensaje</label>
+            <textarea class="form-control my-3" id="exampleTextArea" rows="5"></textarea>
+            <button type="submit" class="btn btn-info">Enviar</button>
         </form>
     </section>
 
