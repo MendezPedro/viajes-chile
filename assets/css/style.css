@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2 {
+    color: #212529;
+    font-weight: 300;
+}
+
+p {
+    color: #707070;
+    font-weight: 300;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 500;
+}
