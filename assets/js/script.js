@@ -21,3 +21,25 @@ $(document).scroll( function(e){
         $("nav").removeClass("nav-black");
     }
 });
+
+// aplica smoothScroll
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbarNav',
+    offset: 100,
+    smoothScroll: true
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 50; // Ajusta el desplazamiento si es necesario
+        const elementPosition = target.offsetTop - offset;
+
+        window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+        });
+    });
+});

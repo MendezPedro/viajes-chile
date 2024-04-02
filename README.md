@@ -7,3 +7,9 @@ Link de git pages:
 ```ruby
 https://mendezpedro.github.io/Viajes_Chile
 ```
+
+## Versiona
+
+* jquery - 3.7.1
+* bootstrap - 5.3.3
+* popper - 2.11.8
