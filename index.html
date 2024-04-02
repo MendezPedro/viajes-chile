@@ -17,30 +17,29 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-info fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <img class="" src="assets/img/viajes.svg" alt="Viajes Chile" width="60">
             <h1>Viajes Chile</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Inicio</a>
+                        <a class="nav-link text-white" href="#Inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">Quienes Somos</a>
+                        <a class="nav-link text-white" href="#Quienes">Quienes Somos</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="#">Destacados</a>
+                        <a class="nav-link text-white" href="#Destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contacto</a>
+                        <a class="nav-link text-white" href="#Contacto">Contacto</a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
@@ -48,7 +47,7 @@
 
 
     <!-- Carousel -->
-    <header id="inicio" class="">
+    <header id="Inicio" class="">
         <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -72,21 +71,21 @@
         </div>
     </header>
 
-
-    <section class="color-black d-none  d-md-block">
+    <!-- section para ocultar en pantallas pequeñas con tooltip-->
+    <section id="Quienes" class="color-black d-none  d-md-block">
         <div class="container">
             <h2 class="py-5 text-white text-center">¿QUIENES SOMOS?</h2>
             <div class="row text-white py-5">
                 <div class="col-md-4">
-                    <i class="container text-center bg-info fas fa-plane fa-2x " data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Avión"></i>
+                    <i class="container text-center bg-info fas fa-plane fa-2x " data-bs-toggle="tooltip" data-bs-placement="top" title="Avión"></i>
                     <p class="text-left font-400 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio omnis, autem nostrum suscipit maiores tempore ad illo a veritatis esse ut voluptatem culpa aliquam odit vel sequi dolores, consequatur eos!</p> 
                 </div>
                 <div class="col-md-4">
                     <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga praesentium architecto deleniti possimus vel ducimus dolorem magni aperiam enim odio perspiciatis error repellat consectetur minus atque esse obcaecati, voluptates veritatis.</p>
-                    <i class=" container text-center fas fa-mountain fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Montaña"></i>
+                    <i class=" container text-center fas fa-mountain fa-2x bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Montaña"></i>
                 </div>
                 <div class="col-md-4">
-                    <i class="container text-center fas fa-route fa-2x bg-info" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Ruta"></i>
+                    <i class="container text-center fas fa-route fa-2x bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Ruta"></i>
                     <p class="text-left font-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reprehenderit dolores magni? Repudiandae, magni. Iste illum minima eveniet architecto non repudiandae voluptates odit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni consequuntur veritatis minima perferendis aliquam, distinctio qui fuga quam sunt sequi fugit minus molestiae reprehenderit similique odit iusto aliquid pariatur sit? </p>
                 </div>
             </div>
@@ -94,9 +93,8 @@
     </section>
 
 
-
     <!-- Destacados en tarjetas -->
-    <section id="destacado" class="color-black px-1">
+    <section id="Destacados" class="color-black px-1">
         <h2 class="p-5 text-white text-center">DESTACADOS</h2>
 
         <div class="container py-3">
@@ -146,10 +144,9 @@
     </section>
 
 
-
-    <section class="p-5 color-black">
+    <!-- formulario -->
+    <section id="Contacto" class="p-5 color-black">
         <form class="container text-white">
-
             <h2 class="text-center text-white">CONTACTO</h2>
             <label for="exampleInputEmail1" class="form-label">Nombre</label>
             <input type="name" class="form-control my-3" id="exampleInputEmail1" aria-describedby="emailHelp" >
@@ -162,7 +159,7 @@
     </section>
 
 
-
+    <!-- footer con link a redes sociales -->
     <footer class="bg-info" >
         <div class="container py-3 text-white">
             <div class="row">
@@ -182,7 +179,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <!-- mi archivo js -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

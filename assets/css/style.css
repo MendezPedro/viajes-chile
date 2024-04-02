@@ -25,3 +25,12 @@ h1 {
 .color-black {
     background-color: #000000;
 }
+
+.navbar {
+    background-color: transparent;
+}
+
+.nav-black{
+    background-color: black;
+    color: white;
+}
